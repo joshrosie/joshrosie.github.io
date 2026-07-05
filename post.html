@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Writing — Joshua Rosenthal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="page">
+    <a href="blog.html" class="back-link">&#8592; Writing</a>
+    <article class="prose" id="post">
+        <p class="empty-note">Loading&hellip;</p>
+    </article>
+</div>
+
+<script src="md.js"></script>
+<script>
+const slug = new URLSearchParams(location.search).get('slug') || '';
+const el = document.getElementById('post');
+
+// Only allow simple slugs so the fetch path can't be manipulated.
+if (!/^[a-z0-9-]+$/i.test(slug)) {
+    el.innerHTML = '<p class="empty-note">Post not found.</p>';
+} else {
+    Promise.all([
+        fetch('posts/posts.json').then(r => r.ok ? r.json() : []),
+        fetch(`posts/${slug}.md`).then(r => r.ok ? r.text() : Promise.reject())
+    ])
+    .then(([posts, md]) => {
+        const meta = posts.find(p => p.slug === slug);
+        document.title = (meta ? meta.title : 'Writing') + ' — Joshua Rosenthal';
+        const dateHtml = meta ? `<span class="post-date">${meta.date}</span>` : '';
+        el.innerHTML = dateHtml + renderMarkdown(md);
+    })
+    .catch(() => {
+        el.innerHTML = '<p class="empty-note">Post not found.</p>';
+    });
+}
+</script>
+
+</body>
+</html>
