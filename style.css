@@ -433,6 +433,20 @@ section.visible .tl-item {
     line-height: 1.55;
 }
 
+.tl-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: var(--text-dim);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    transition: color 0.15s, text-shadow 0.15s;
+}
+
+.tl-link:hover { color: var(--cyan); text-shadow: 0 0 8px var(--cyan-glow); }
+
 /* ---- Skills ---- */
 .skills {
     margin-top: 2.5rem;
