@@ -10,6 +10,7 @@ Static personal site — plain HTML/CSS, no build step, no dependencies.
 | `blog.html` | Writing index (lists posts from `posts/posts.json`) |
 | `post.html` | Renders a single post (`post.html?slug=…`) |
 | `md.js` | Tiny Markdown → HTML renderer |
+| `newpost.sh` | Creates a post and registers it in the manifest |
 | `style.css` | All styles |
 | `posts/` | Published blog posts (`.md`) + `posts.json` manifest |
 | `drafts/` | Local-only drafts (git-ignored, never published) |
@@ -17,15 +18,40 @@ Static personal site — plain HTML/CSS, no build step, no dependencies.
 
 ## Writing a post
 
-1. Add a Markdown file: `posts/my-post.md`
-2. Add an entry to `posts/posts.json`:
-   ```json
-   { "slug": "my-post", "title": "My Post", "date": "2026-07-10", "summary": "One line." }
-   ```
-   (`slug` must match the filename and contain only letters, numbers, and hyphens.)
-3. Commit and push.
+```bash
+./newpost.sh "Thoughts on Diffusion Samplers"
+```
 
-Keep unfinished work in `drafts/` — it stays on your machine.
+That creates `posts/thoughts-on-diffusion-samplers.md` with the title already in
+it, and prepends the matching entry to `posts/posts.json` (newest post first).
+Write the post, fill in the one-line `summary` in the manifest, then:
+
+```bash
+git add -A && git commit -m "Add post: ..." && git push
+```
+
+GitHub Pages redeploys in well under a minute.
+
+For something unfinished, `-d` writes to the git-ignored `drafts/` folder and
+touches nothing else:
+
+```bash
+./newpost.sh -d "Half-baked idea"
+```
+
+When a draft is ready, move it into `posts/` and run `newpost.sh` with the same
+title to register it.
+
+### By hand
+
+If you'd rather not use the script: add `posts/my-post.md`, then an entry to
+`posts/posts.json`:
+
+```json
+{ "slug": "my-post", "title": "My Post", "date": "2026-07-10", "summary": "One line." }
+```
+
+`slug` must match the filename and contain only letters, numbers, and hyphens.
 
 ## Preview locally
 
@@ -37,10 +63,7 @@ python3 -m http.server 8000
 # then open http://localhost:8000
 ```
 
-## Publish (GitHub Pages)
+## Publishing
 
-1. Create a repo and push this folder.
-2. Repo **Settings → Pages → Build and deployment → Source: Deploy from a branch**,
-   branch `main`, folder `/ (root)`.
-3. Site goes live at `https://<username>.github.io/<repo>/`
-   (or your custom domain).
+Live at **https://joshrosie.github.io** — served by GitHub Pages from `main`,
+root folder. Pushing to `main` deploys.
