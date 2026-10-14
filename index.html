@@ -5,12 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joshua Rosenthal</title>
     <meta name="description" content="Joshua Rosenthal — AI researcher working on deep generative modelling, efficiency, and practical deployment.">
+    <meta name="theme-color" content="#08080b">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="canonical" href="https://joshrosie.github.io/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://joshrosie.github.io/">
+    <meta property="og:title" content="Joshua Rosenthal">
+    <meta property="og:description" content="AI researcher working on deep generative modelling, efficiency, and practical deployment.">
+    <meta name="twitter:card" content="summary">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
+
+<div class="progress" aria-hidden="true"></div>
+<a href="#main" class="skip-link">Skip to content</a>
 
 <nav>
     <div class="nav-inner">
@@ -22,204 +36,233 @@
             <a href="blog.html">Writing</a>
             <a href="#contact">Contact</a>
         </div>
-        <button class="nav-toggle" aria-label="Toggle menu">
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
             <span></span><span></span><span></span>
         </button>
     </div>
 </nav>
 
 <header id="hero">
-    <h1>Joshua Rosenthal</h1>
-    <p class="intro">
-        I work on machine learning with a focus on <strong>deep generative modelling</strong> —
-        efficiency, scalability, and practical deployment. I recently finished my
-        <strong>MSc in Artificial Intelligence</strong> at the University of Amsterdam, with thesis
-        research at the <strong>UvA-Bosch Delta Lab</strong>. Before that, production ML and solutions
-        architecture across a few companies.
-    </p>
-    <div class="hero-links">
-        <a href="mailto:joshuarosenthalza@gmail.com">Email</a>
-        <a href="https://github.com/joshrosie" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://www.linkedin.com/in/joshua-rosenthal1/" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://scholar.google.com/citations?user=gbQZgnQAAAAJ&hl=en" target="_blank" rel="noopener">Scholar</a>
-        <a href="joshua_rosenthal_cv.pdf" target="_blank" rel="noopener" class="cv-link">CV&nbsp;&#8595;</a>
+    <div class="aurora" aria-hidden="true"><span></span><span></span></div>
+    <div class="hero-inner">
+        <span class="eyebrow"><span class="pulse" aria-hidden="true"></span>Open to opportunities</span>
+        <h1>Joshua<br>Rosenthal</h1>
+        <p class="intro">
+            I work on machine learning with a focus on <span class="hl">deep generative modelling</span> —
+            efficiency, scalability, and practical deployment. I recently finished my
+            <strong>MSc in Artificial Intelligence</strong> at the University of Amsterdam, with thesis
+            research at the <strong>UvA-Bosch Delta Lab</strong>. Before that, production ML and solutions
+            architecture across a few companies.
+        </p>
+        <div class="hero-links">
+            <a href="joshua_rosenthal_cv.pdf" target="_blank" rel="noopener" class="cv-link">CV&nbsp;&#8595;</a>
+            <a href="mailto:joshuarosenthalza@gmail.com">Email</a>
+            <a href="https://github.com/joshrosie" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.linkedin.com/in/joshua-rosenthal1/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://scholar.google.com/citations?user=gbQZgnQAAAAJ&hl=en" target="_blank" rel="noopener">Scholar</a>
+        </div>
+        <p class="scroll-cue" aria-hidden="true">Scroll</p>
     </div>
 </header>
 
-<main>
+<main id="main">
 
-    <section id="research">
-        <h2>Research</h2>
-
-        <div class="card">
-            <span class="label">ICML AI4Physics &middot; under review, NeurIPS '26</span>
-            <h3>Crystalite: A Lightweight Transformer for Efficient Crystal Modeling</h3>
-            <p>A lightweight diffusion transformer for crystal structure modelling, sampling 10&ndash;100&times; faster than equivariant baselines.</p>
-            <div class="card-links">
-                <a href="https://github.com/joshrosie/crystalite" target="_blank" rel="noopener">Code</a>
-                <a href="https://arxiv.org/abs/2604.02270" target="_blank" rel="noopener">Paper</a>
-            </div>
+    <section id="research" class="wrap">
+        <div class="sec-head reveal">
+            <h2>Research</h2>
+            <span class="rule"></span>
+            <span class="sec-count">04</span>
         </div>
 
-        <div class="card">
-            <span class="label">TAG-DS &middot; Spotlight &middot; PMLR</span>
-            <h3>Symmetry-Aware Graph Metanetwork Autoencoders</h3>
-            <p>Model merging through parameter canonicalization &mdash; a symmetry-aware autoencoder over metanetworks enabling linear interpolation within a single basin.</p>
-            <div class="card-links">
-                <a href="https://arxiv.org/abs/2511.12601" target="_blank" rel="noopener">Paper</a>
-            </div>
-        </div>
+        <div class="card-grid">
+            <article class="card reveal">
+                <span class="label">ICML AI4Physics &middot; under review, NeurIPS '26</span>
+                <h3>Crystalite: A Lightweight Transformer for Efficient Crystal Modeling</h3>
+                <p>A lightweight diffusion transformer for crystal structure modelling, sampling 10&ndash;100&times; faster than equivariant baselines.</p>
+                <div class="card-links">
+                    <a href="https://github.com/joshrosie/crystalite" target="_blank" rel="noopener">Code</a>
+                    <a href="https://arxiv.org/abs/2604.02270" target="_blank" rel="noopener">Paper</a>
+                </div>
+            </article>
 
-        <div class="card">
-            <span class="label">ECIR &middot; Springer LNCS</span>
-            <h3>Efficient Optimization of Hierarchical Identifiers for Generative Recommendation</h3>
-            <p>Optimised construction of hierarchical item identifiers, improving the speed of generative sequential retrieval on large-scale datasets.</p>
-            <div class="card-links">
-                <a href="https://github.com/joshrosie/re-seater" target="_blank" rel="noopener">Code</a>
-                <a href="https://link.springer.com/chapter/10.1007/978-3-032-21324-2_6" target="_blank" rel="noopener">Paper</a>
-            </div>
-        </div>
+            <article class="card reveal">
+                <span class="label">TAG-DS &middot; Spotlight &middot; PMLR</span>
+                <h3>Symmetry-Aware Graph Metanetwork Autoencoders</h3>
+                <p>Model merging through parameter canonicalization &mdash; a symmetry-aware autoencoder over metanetworks enabling linear interpolation within a single basin.</p>
+                <div class="card-links">
+                    <a href="https://arxiv.org/abs/2511.12601" target="_blank" rel="noopener">Paper</a>
+                </div>
+            </article>
 
-        <div class="card">
-            <span class="label">TMLR &middot; Reproducibility</span>
-            <h3>[Re] Benchmarking LLM Capabilities in Negotiation through Scoreable Games</h3>
-            <p>A reproducibility study benchmarking LLM effectiveness in multiplayer negotiation settings.</p>
-            <div class="card-links">
-                <a href="https://github.com/joshrosie/FACT29" target="_blank" rel="noopener">Code</a>
-                <a href="https://openreview.net/forum?id=BVH81SAAh2" target="_blank" rel="noopener">Paper</a>
-            </div>
-        </div>
-    </section>
+            <article class="card reveal">
+                <span class="label">ECIR &middot; Springer LNCS</span>
+                <h3>Efficient Optimization of Hierarchical Identifiers for Generative Recommendation</h3>
+                <p>Optimised construction of hierarchical item identifiers, improving the speed of generative sequential retrieval on large-scale datasets.</p>
+                <div class="card-links">
+                    <a href="https://github.com/joshrosie/re-seater" target="_blank" rel="noopener">Code</a>
+                    <a href="https://link.springer.com/chapter/10.1007/978-3-032-21324-2_6" target="_blank" rel="noopener">Paper</a>
+                </div>
+            </article>
 
-    <section id="projects">
-        <h2>Projects</h2>
-
-        <div class="card">
-            <span class="label">Graphics</span>
-            <h3>Ray Tracer</h3>
-            <p>A ray tracer built from scratch, working through the rendering and graphics math.</p>
-            <div class="card-links">
-                <a href="https://github.com/joshrosie/RayTracer" target="_blank" rel="noopener">Code</a>
-            </div>
-        </div>
-
-        <div class="card">
-            <span class="label">Causal Inference</span>
-            <h3>Causal Effect of Education on Wages</h3>
-            <p>A full causal-inference pipeline reproducing Card (1995): DAG specification, backdoor + IV identification, conditional-independence tests, and IV estimation.</p>
-            <div class="card-links">
-                <a href="https://github.com/joshrosie/causality" target="_blank" rel="noopener">Code</a>
-            </div>
-        </div>
-
-        <div class="card">
-            <span class="label">Reinforcement Learning</span>
-            <h3>Robotic Soccer Simulation Framework</h3>
-            <p>A reinforcement-learning simulation framework in MuJoCo for autonomous robotic soccer, training single- and multi-agent policies (PPO, MAPPO).</p>
+            <article class="card reveal">
+                <span class="label">TMLR &middot; Reproducibility</span>
+                <h3>[Re] Benchmarking LLM Capabilities in Negotiation through Scoreable Games</h3>
+                <p>A reproducibility study benchmarking LLM effectiveness in multiplayer negotiation settings.</p>
+                <div class="card-links">
+                    <a href="https://github.com/joshrosie/FACT29" target="_blank" rel="noopener">Code</a>
+                    <a href="https://openreview.net/forum?id=BVH81SAAh2" target="_blank" rel="noopener">Paper</a>
+                </div>
+            </article>
         </div>
     </section>
 
-    <section id="background">
-        <h2>Background</h2>
+    <section id="projects" class="wrap">
+        <div class="sec-head reveal">
+            <h2>Projects</h2>
+            <span class="rule"></span>
+            <span class="sec-count">03</span>
+        </div>
+
+        <div class="card-grid">
+            <article class="card reveal">
+                <span class="label">Graphics</span>
+                <h3>Ray Tracer</h3>
+                <p>A ray tracer built from scratch, working through the rendering and graphics math.</p>
+                <div class="card-links">
+                    <a href="https://github.com/joshrosie/RayTracer" target="_blank" rel="noopener">Code</a>
+                </div>
+            </article>
+
+            <article class="card reveal">
+                <span class="label">Causal Inference</span>
+                <h3>Causal Effect of Education on Wages</h3>
+                <p>A full causal-inference pipeline reproducing Card (1995): DAG specification, backdoor + IV identification, conditional-independence tests, and IV estimation.</p>
+                <div class="card-links">
+                    <a href="https://github.com/joshrosie/causality" target="_blank" rel="noopener">Code</a>
+                </div>
+            </article>
+
+            <article class="card reveal">
+                <span class="label">Reinforcement Learning</span>
+                <h3>Robotic Soccer Simulation Framework</h3>
+                <p>A reinforcement-learning simulation framework in MuJoCo for autonomous robotic soccer, training single- and multi-agent policies (PPO, MAPPO).</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="background" class="wrap">
+        <div class="sec-head reveal">
+            <h2>Background</h2>
+            <span class="rule"></span>
+        </div>
 
         <div class="timeline">
-            <div class="tl-item">
+            <div class="tl-item reveal">
                 <span class="tl-date">2026</span>
                 <div>
-                    <strong>Research Intern &amp; MSc Thesis</strong>, UvA-Bosch Delta Lab
+                    <strong>Research Intern &amp; MSc Thesis</strong><span class="org">, UvA-Bosch Delta Lab</span>
                     <p>Built <em>Crystalite</em>, a lightweight diffusion transformer, and <em>Flywheel</em>, an MLIP-based self-improvement loop that raised metastable-novel crystal discovery from 22.6% to 35% over two training rounds.</p>
                     <a class="tl-link" href="https://github.com/joshrosie/DISCO" target="_blank" rel="noopener">Thesis code &#8599;</a>
                 </div>
             </div>
-            <div class="tl-item">
+            <div class="tl-item reveal">
                 <span class="tl-date">2024 &ndash; 25</span>
                 <div>
-                    <strong>Research Engineer</strong> (Volunteer), Intelligent Robotics Lab, UvA
+                    <strong>Research Engineer</strong><span class="org"> (Volunteer), Intelligent Robotics Lab, UvA</span>
                     <p>Dutch NAO Team. Reinforcement-learning simulation in MuJoCo; single- and multi-agent policies for autonomous robotic soccer.</p>
                 </div>
             </div>
-            <div class="tl-item">
+            <div class="tl-item reveal">
                 <span class="tl-date">2024</span>
                 <div>
-                    <strong>Data Engineer</strong>, CallCabinet
+                    <strong>Data Engineer</strong><span class="org">, CallCabinet</span>
                     <p>Fine-tuned BERT for emotion/topic classification on call-centre transcripts. Built a production RAG pipeline (Python, GPT-3.5, Azure, Elasticsearch).</p>
                 </div>
             </div>
-            <div class="tl-item">
+            <div class="tl-item reveal">
                 <span class="tl-date">2023 &ndash; 24</span>
                 <div>
-                    <strong>Solutions Architect</strong>, GoSolr
+                    <strong>Solutions Architect</strong><span class="org">, GoSolr</span>
                     <p>Shipped REST APIs and backend services on AWS (TypeScript, SQL). Architected distributed energy-management systems for 10,000+ smart-home deployments.</p>
                 </div>
             </div>
-            <div class="tl-item">
+            <div class="tl-item reveal">
                 <span class="tl-date">2024 &ndash; 26</span>
                 <div>
-                    <strong>MSc Artificial Intelligence</strong>, University of Amsterdam
+                    <strong>MSc Artificial Intelligence</strong><span class="org">, University of Amsterdam</span>
                     <p>GPA 8.6/10. Deep learning, geometric deep learning, reinforcement learning, causality, information retrieval.</p>
                 </div>
             </div>
-            <div class="tl-item">
+            <div class="tl-item reveal">
                 <span class="tl-date">2019 &ndash; 22</span>
                 <div>
-                    <strong>BSc (Hons) Computer Science &amp; Applied Statistics</strong>, University of Cape Town
+                    <strong>BSc (Hons) Computer Science &amp; Applied Statistics</strong><span class="org">, University of Cape Town</span>
                     <p>82.1%, First Class Honours, Dean's Merit List. Machine learning, optimisation, statistical inference.</p>
                 </div>
             </div>
         </div>
 
         <div class="skills">
-            <div class="skill-row"><span class="skill-key">Languages</span> Python, TypeScript, SQL, Java</div>
-            <div class="skill-row"><span class="skill-key">ML</span> PyTorch, TensorFlow, Hugging Face, NumPy, SciPy, Pandas, pymatgen</div>
-            <div class="skill-row"><span class="skill-key">Infra</span> AWS, Azure, SLURM, Weights &amp; Biases, Git</div>
-            <div class="skill-row"><span class="skill-key">Data</span> PostgreSQL, Elasticsearch</div>
+            <div class="skill-row reveal">
+                <span class="skill-key">Languages</span>
+                <div class="chips">
+                    <span>Python</span><span>TypeScript</span><span>SQL</span><span>Java</span>
+                </div>
+            </div>
+            <div class="skill-row reveal">
+                <span class="skill-key">ML</span>
+                <div class="chips">
+                    <span>PyTorch</span><span>TensorFlow</span><span>Hugging Face</span><span>NumPy</span><span>SciPy</span><span>Pandas</span><span>pymatgen</span>
+                </div>
+            </div>
+            <div class="skill-row reveal">
+                <span class="skill-key">Infra</span>
+                <div class="chips">
+                    <span>AWS</span><span>Azure</span><span>SLURM</span><span>Weights &amp; Biases</span><span>Git</span>
+                </div>
+            </div>
+            <div class="skill-row reveal">
+                <span class="skill-key">Data</span>
+                <div class="chips">
+                    <span>PostgreSQL</span><span>Elasticsearch</span>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Get in touch</h2>
-        <p class="contact-text">
-            I'm always interested in discussing research, collaborations, or new opportunities.
-        </p>
-        <div class="contact-links">
-            <a href="mailto:joshuarosenthalza@gmail.com">joshuarosenthalza@gmail.com</a>
+    <section id="contact" class="wrap">
+        <div class="sec-head reveal">
+            <h2>Contact</h2>
+            <span class="rule"></span>
+        </div>
+
+        <div class="contact-card reveal">
+            <h3>Get in touch</h3>
+            <p class="contact-text">
+                I'm always interested in discussing research, collaborations, or new opportunities.
+            </p>
+            <div class="contact-links">
+                <a href="mailto:joshuarosenthalza@gmail.com">joshuarosenthalza@gmail.com</a>
+                <a href="https://github.com/joshrosie" target="_blank" rel="noopener">GitHub &#8599;</a>
+                <a href="https://www.linkedin.com/in/joshua-rosenthal1/" target="_blank" rel="noopener">LinkedIn &#8599;</a>
+            </div>
         </div>
     </section>
 
 </main>
 
 <footer>
-    <p>Joshua Rosenthal &middot; 2026</p>
+    <div class="footer-inner">
+        <p>Joshua Rosenthal &middot; 2026</p>
+        <div class="footer-links">
+            <a href="blog.html">Writing</a>
+            <a href="joshua_rosenthal_cv.pdf" target="_blank" rel="noopener">CV</a>
+            <a href="https://github.com/joshrosie" target="_blank" rel="noopener">GitHub</a>
+        </div>
+    </div>
 </footer>
 
-<script>
-const nav = document.querySelector('nav');
-window.addEventListener('scroll', () => {
-    nav.classList.toggle('scrolled', window.scrollY > 50);
-});
-
-const toggle = document.querySelector('.nav-toggle');
-const navLinks = document.querySelector('.nav-links');
-toggle.addEventListener('click', () => {
-    navLinks.classList.toggle('open');
-    toggle.classList.toggle('open');
-});
-navLinks.querySelectorAll('a').forEach(a => {
-    a.addEventListener('click', () => {
-        navLinks.classList.remove('open');
-        toggle.classList.remove('open');
-    });
-});
-
-// Fade sections in as they enter the viewport
-const observer = new IntersectionObserver(entries => {
-    entries.forEach(e => {
-        if (e.isIntersecting) e.target.classList.add('visible');
-    });
-}, { threshold: 0.12 });
-
-document.querySelectorAll('section').forEach(s => observer.observe(s));
-</script>
+<script src="site.js"></script>
 
 </body>
 </html>

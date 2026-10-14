@@ -4,38 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Writing — Joshua Rosenthal</title>
+    <meta name="description" content="Notes on research, things I'm building, and whatever I'm thinking about.">
+    <meta name="theme-color" content="#08080b">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Writing — Joshua Rosenthal">
+    <meta property="og:description" content="Notes on research, things I'm building, and whatever I'm thinking about.">
+    <meta name="twitter:card" content="summary">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
 
-<div class="page">
+<div class="progress" aria-hidden="true"></div>
+
+<div class="page page-narrow">
     <a href="/" class="back-link">&#8592; Home</a>
     <h1 class="page-title">Writing</h1>
+    <p class="page-sub">Notes on research, things I'm building, and whatever I'm thinking about.</p>
+
     <div class="post-list" id="post-list">
         <p class="empty-note">Loading&hellip;</p>
     </div>
 </div>
 
+<script src="site.js"></script>
 <script>
+// Escape anything coming from the manifest before it reaches innerHTML.
+function esc(s) {
+    return String(s == null ? '' : s)
+        .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+}
+
 fetch('posts/posts.json')
-    .then(r => r.ok ? r.json() : [])
-    .then(posts => {
-        const list = document.getElementById('post-list');
-        if (!posts.length) {
+    .then(function (r) { return r.ok ? r.json() : []; })
+    .then(function (posts) {
+        var list = document.getElementById('post-list');
+
+        if (!Array.isArray(posts) || !posts.length) {
             list.innerHTML = '<p class="empty-note">No posts yet.</p>';
             return;
         }
-        list.innerHTML = posts.map(p => `
-            <a class="post-item" href="post.html?slug=${encodeURIComponent(p.slug)}">
-                <span class="post-date">${p.date}</span>
-                <h3>${p.title}</h3>
-                ${p.summary ? `<p>${p.summary}</p>` : ''}
-            </a>`).join('');
+
+        // Newest first, regardless of manifest order.
+        posts.sort(function (a, b) {
+            return String(b.date || '').localeCompare(String(a.date || ''));
+        });
+
+        list.innerHTML = posts.map(function (p) {
+            return '<a class="post-item reveal" href="post.html?slug=' + encodeURIComponent(p.slug) + '">'
+                 +   '<span class="post-date">' + esc(p.date) + '</span>'
+                 +   '<h3>' + esc(p.title) + '</h3>'
+                 +   (p.summary ? '<p>' + esc(p.summary) + '</p>' : '')
+                 + '</a>';
+        }).join('');
+
+        // Wire up the cards we just inserted.
+        if (window.initSheen) window.initSheen();
+        if (window.revealNew) window.revealNew();
     })
-    .catch(() => {
+    .catch(function () {
         document.getElementById('post-list').innerHTML =
             '<p class="empty-note">Could not load posts.</p>';
     });

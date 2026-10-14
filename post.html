@@ -4,14 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Writing — Joshua Rosenthal</title>
+    <meta name="theme-color" content="#08080b">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <meta name="twitter:card" content="summary">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
 
-<div class="page">
+<div class="progress" aria-hidden="true"></div>
+
+<div class="page page-narrow">
     <a href="blog.html" class="back-link">&#8592; Writing</a>
     <article class="prose" id="post">
         <p class="empty-note">Loading&hellip;</p>
@@ -19,25 +26,41 @@
 </div>
 
 <script src="md.js"></script>
+<script src="site.js"></script>
 <script>
-const slug = new URLSearchParams(location.search).get('slug') || '';
-const el = document.getElementById('post');
+var slug = new URLSearchParams(location.search).get('slug') || '';
+var el = document.getElementById('post');
+
+function esc(s) {
+    return String(s == null ? '' : s)
+        .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
 
 // Only allow simple slugs so the fetch path can't be manipulated.
 if (!/^[a-z0-9-]+$/i.test(slug)) {
     el.innerHTML = '<p class="empty-note">Post not found.</p>';
 } else {
     Promise.all([
-        fetch('posts/posts.json').then(r => r.ok ? r.json() : []),
-        fetch(`posts/${slug}.md`).then(r => r.ok ? r.text() : Promise.reject())
+        fetch('posts/posts.json').then(function (r) { return r.ok ? r.json() : []; }),
+        fetch('posts/' + slug + '.md').then(function (r) {
+            return r.ok ? r.text() : Promise.reject(new Error('missing'));
+        })
     ])
-    .then(([posts, md]) => {
-        const meta = posts.find(p => p.slug === slug);
+    .then(function (res) {
+        var posts = res[0], md = res[1];
+        var meta = Array.isArray(posts)
+            ? posts.find(function (p) { return p.slug === slug; })
+            : null;
+
         document.title = (meta ? meta.title : 'Writing') + ' — Joshua Rosenthal';
-        const dateHtml = meta ? `<span class="post-date">${meta.date}</span>` : '';
+
+        var dateHtml = meta && meta.date
+            ? '<span class="post-date">' + esc(meta.date) + '</span>'
+            : '';
+
         el.innerHTML = dateHtml + renderMarkdown(md);
     })
-    .catch(() => {
+    .catch(function () {
         el.innerHTML = '<p class="empty-note">Post not found.</p>';
     });
 }
