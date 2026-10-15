@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="828pt" height="576pt" viewBox="0 0 828 576" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-16T00:55:56.615454</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 576 
+L 828 576 
+L 828 0 
+L 0 0 
+z
+" style="fill: #fbfcfa"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 66.17376 198.88128 
+L 172.29024 198.88128 
+Q 190.71324 198.88128 190.71324 194.70528 
+L 190.71324 163.96992 
+Q 190.71324 159.79392 172.29024 159.79392 
+L 66.17376 159.79392 
+Q 47.75076 159.79392 47.75076 163.96992 
+L 47.75076 194.70528 
+Q 47.75076 198.88128 66.17376 198.88128 
+z
+" clip-path="url(#pf81ba0aad4)" style="fill: #e8eef4"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 239.34996 198.88128 
+L 345.46644 198.88128 
+Q 363.88944 198.88128 363.88944 194.70528 
+L 363.88944 163.96992 
+Q 363.88944 159.79392 345.46644 159.79392 
+L 239.34996 159.79392 
+Q 220.92696 159.79392 220.92696 163.96992 
+L 220.92696 194.70528 
+Q 220.92696 198.88128 239.34996 198.88128 
+z
+" clip-path="url(#pf81ba0aad4)" style="fill: #e8eef4"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 154.60416 269.03808 
+L 260.72064 269.03808 
+Q 279.14364 269.03808 279.14364 264.86208 
+L 279.14364 234.12672 
+Q 279.14364 229.95072 260.72064 229.95072 
+L 154.60416 229.95072 
+Q 136.18116 229.95072 136.18116 234.12672 
+L 136.18116 264.86208 
+Q 136.18116 269.03808 154.60416 269.03808 
+z
+" clip-path="url(#pf81ba0aad4)" style="fill: #e4f0ea"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 121.145365 202.466278 
+Q 163.446777 215.251072 204.249877 227.58303 
+" clip-path="url(#pf81ba0aad4)" style="fill: none; stroke: #526963; stroke-width: 1.4; stroke-linecap: round"/>
+    <path d="M 199.699411 223.282652 
+L 204.249877 227.58303 
+L 198.079295 228.643176 
+z
+" clip-path="url(#pf81ba0aad4)" style="fill: #526963; stroke: #526963; stroke-width: 1.4; stroke-linecap: round"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 290.502144 202.489116 
+Q 250.036618 215.250784 211.063864 227.541676 
+" clip-path="url(#pf81ba0aad4)" style="fill: none; stroke: #526963; stroke-width: 1.4; stroke-linecap: round"/>
+    <path d="M 217.24672 228.527722 
+L 211.063864 227.541676 
+L 215.562415 223.187019 
+z
+" clip-path="url(#pf81ba0aad4)" style="fill: #526963; stroke: #526963; stroke-width: 1.4; stroke-linecap: round"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #19332f" x="45.54" y="141.458456" transform="rotate(-0 45.54 141.458456)">Lanthanide anonymization</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #19332f" x="119.232" y="183.7526" transform="rotate(-0 119.232 183.7526)">NdFeO₃</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #19332f" x="292.4082" y="183.7526" transform="rotate(-0 292.4082 183.7526)">EuFeO₃</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #19332f" x="207.6624" y="253.9094" transform="rotate(-0 207.6624 253.9094)">LaFeO₃</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 13.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #19332f" x="414" y="175.397091" transform="rotate(-0 414 175.397091)">Relabel every lanthanide as La.</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 13.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #19332f" x="414" y="207.134691" transform="rotate(-0 414 207.134691)">Keep lattice and atomic positions unchanged.</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 13.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #19332f" x="414" y="238.872291" transform="rotate(-0 414 238.872291)">Then rerun structural matching against MP-20.</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 10.8px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #526963" x="56.5938" y="299.6064" transform="rotate(-0 56.5938 299.6064)">Illustration of relabelling; a shared formula alone does not establish a structural match.</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_7">
+    <path d="M 149.04 466.56 
+L 778.32 466.56 
+L 778.32 325.44 
+L 149.04 325.44 
+z
+" style="fill: #fbfcfa"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <path d="M 149.04 466.56 
+L 149.04 325.44 
+" clip-path="url(#pa04e427653)" style="fill: none; stroke: #dce5df; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_2"/>
+     <g id="text_9">
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #526963" x="149.04" y="484.437969" transform="rotate(-0 149.04 484.437969)">0</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_3">
+      <path d="M 298.868571 466.56 
+L 298.868571 325.44 
+" clip-path="url(#pa04e427653)" style="fill: none; stroke: #dce5df; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_4"/>
+     <g id="text_10">
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #526963" x="298.868571" y="484.437969" transform="rotate(-0 298.868571 484.437969)">10</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_5">
+      <path d="M 448.697143 466.56 
+L 448.697143 325.44 
+" clip-path="url(#pa04e427653)" style="fill: none; stroke: #dce5df; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_6"/>
+     <g id="text_11">
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #526963" x="448.697143" y="484.437969" transform="rotate(-0 448.697143 484.437969)">20</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_7">
+      <path d="M 598.525714 466.56 
+L 598.525714 325.44 
+" clip-path="url(#pa04e427653)" style="fill: none; stroke: #dce5df; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_8"/>
+     <g id="text_12">
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #526963" x="598.525714" y="484.437969" transform="rotate(-0 598.525714 484.437969)">30</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_9">
+      <path d="M 748.354286 466.56 
+L 748.354286 325.44 
+" clip-path="url(#pa04e427653)" style="fill: none; stroke: #dce5df; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_10"/>
+     <g id="text_13">
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #526963" x="748.354286" y="484.437969" transform="rotate(-0 748.354286 484.437969)">40</text>
+     </g>
+    </g>
+    <g id="text_14">
+     <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #19332f" x="463.68" y="507.019531" transform="rotate(-0 463.68 507.019531)">MSUN contribution (% of valid samples)</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_11"/>
+     <g id="text_15">
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #19332f" x="141.04" y="357.888344" transform="rotate(-0 141.04 357.888344)">Flywheel · round 1</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_12"/>
+     <g id="text_16">
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #19332f" x="141.04" y="443.989625" transform="rotate(-0 141.04 443.989625)">Flywheel · round 2</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_8">
+    <path d="M 149.04 331.854545 
+L 507.130286 331.854545 
+L 507.130286 374.044173 
+L 149.04 374.044173 
+z
+" clip-path="url(#pa04e427653)" style="fill: #177d70"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 149.04 417.955827 
+L 568.709829 417.955827 
+L 568.709829 460.145455 
+L 149.04 460.145455 
+z
+" clip-path="url(#pa04e427653)" style="fill: #177d70"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 507.130286 331.854545 
+L 540.092571 331.854545 
+L 540.092571 374.044173 
+L 507.130286 374.044173 
+z
+" clip-path="url(#pa04e427653)" style="fill: #cf9853"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 568.709829 417.955827 
+L 609.762857 417.955827 
+L 609.762857 460.145455 
+L 568.709829 460.145455 
+z
+" clip-path="url(#pa04e427653)" style="fill: #cf9853"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 540.092571 331.854545 
+L 588.637029 331.854545 
+L 588.637029 374.044173 
+L 540.092571 374.044173 
+z
+" clip-path="url(#pa04e427653)" style="fill: #adbab6"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 609.762857 417.955827 
+L 674.4888 417.955827 
+L 674.4888 460.145455 
+L 609.762857 460.145455 
+z
+" clip-path="url(#pa04e427653)" style="fill: #adbab6"/>
+   </g>
+   <g id="text_17">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="328.085143" y="357.088422" transform="rotate(-0 328.085143 357.088422)">23.9</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #19332f" x="523.611429" y="355.984672" transform="rotate(-0 523.611429 355.984672)">2.2</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #19332f" x="564.3648" y="355.984672" transform="rotate(-0 564.3648 355.984672)">3.2</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 12.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #19332f" x="599.125029" y="356.398578" transform="rotate(-0 599.125029 356.398578)">29.3% total</text>
+   </g>
+   <g id="text_21">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="358.874914" y="443.189703" transform="rotate(-0 358.874914 443.189703)">28.0</text>
+   </g>
+   <g id="text_22">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #19332f" x="589.236343" y="442.085953" transform="rotate(-0 589.236343 442.085953)">2.7</text>
+   </g>
+   <g id="text_23">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #19332f" x="642.125829" y="442.085953" transform="rotate(-0 642.125829 442.085953)">4.3</text>
+   </g>
+   <g id="text_24">
+    <text style="font-size: 12.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #19332f" x="684.9768" y="442.499859" transform="rotate(-0 684.9768 442.499859)">35.1% total</text>
+   </g>
+  </g>
+  <g id="text_25">
+   <text style="font-weight: 700; font-size: 23px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #19332f" x="45.54" y="48.004406" transform="rotate(-0 45.54 48.004406)">How much novelty survives closer inspection?</text>
+  </g>
+  <g id="text_26">
+   <text style="font-size: 13.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #526963" x="45.54" y="83.985891" transform="rotate(-0 45.54 83.985891)">Separate regenerated structures and lanthanide substitutions from the reported MSUN score</text>
+  </g>
+  <g id="text_27">
+   <text style="font-size: 10.8px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #526963" x="45.54" y="555.84" transform="rotate(-0 45.54 555.84)">Baseline and control models were not anonymized. The remaining rate is specific to these reference and matching checks.</text>
+  </g>
+  <g id="legend_1">
+   <g id="patch_14">
+    <path d="M 163.072125 520.833938 
+L 177.112125 520.833938 
+L 177.112125 513.273938 
+L 163.072125 513.273938 
+z
+" style="fill: #177d70"/>
+   </g>
+   <g id="text_28">
+    <text style="font-size: 10.8px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #19332f" x="185.752125" y="520.833938" transform="rotate(-0 185.752125 520.833938)">Remaining MSUN</text>
+   </g>
+   <g id="patch_15">
+    <path d="M 295.971187 520.833938 
+L 310.011187 520.833938 
+L 310.011187 513.273938 
+L 295.971187 513.273938 
+z
+" style="fill: #cf9853"/>
+   </g>
+   <g id="text_29">
+    <text style="font-size: 10.8px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #19332f" x="318.651187" y="520.833938" transform="rotate(-0 318.651187 520.833938)">Lanthanide substitutions</text>
+   </g>
+   <g id="patch_16">
+    <path d="M 469.466437 520.833938 
+L 483.506438 520.833938 
+L 483.506438 513.273938 
+L 469.466437 513.273938 
+z
+" style="fill: #adbab6"/>
+   </g>
+   <g id="text_30">
+    <text style="font-size: 10.8px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #19332f" x="492.146437" y="520.833938" transform="rotate(-0 492.146437 520.833938)">Regenerated training structures</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pf81ba0aad4">
+   <rect x="45.54" y="126.72" width="736.92" height="167.04"/>
+  </clipPath>
+  <clipPath id="pa04e427653">
+   <rect x="149.04" y="325.44" width="629.28" height="141.12"/>
+  </clipPath>
+ </defs>
+</svg>
